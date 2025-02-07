@@ -1,0 +1,43 @@
+* {
+    Margin:0;
+    Padding:0;
+    Border:0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.bait {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro {
+    flex-direction: column;
+    justify-content: center;
+    height: 5rem;
+}
+
+p {
+    font-size: 3.2rem;
+    margin-top: -8rem;
+    margin-left: 5rem;
+    letter-spacing: .8rem;
+    color: rgb(230, 201, 206);
+    font-weight: bolder;
+    background-color: blue;
+    padding-left: .2rem;
+}
+
+.memes {
+    
+}
+
+
