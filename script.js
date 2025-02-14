@@ -5,7 +5,6 @@ const yes = document.querySelector(".yes");
 
 let baseCount = 0;
 
-console.log(popButton);
 
 popButton.addEventListener(
     "click", (e) => {
@@ -14,8 +13,6 @@ popButton.addEventListener(
             
         }, .900);
 
-
-    console.log("I am here and I am working!!")
 } );
 
 function getRandomInt() {
@@ -32,19 +29,30 @@ function getRandomInt() {
 
 yes.addEventListener(
     "click", (e) => {
-        
+        const vidBg = document.querySelector("video");
+        const ily = document.querySelector("img");
+        const audBg = document.querySelector("audio");
+        const ilysm = document.querySelector(".ily");
+
+        vidBg.classList.add("show");
+        ily.classList.add('show');
+        popWindow.classList.remove("show");
+        audBg.play();
+        ilysm.classList.add("show");
+        console.log("You are an absolutely delicious cutiepie and I am one hungry, rabid raccoon owo")
+
     }
 )
 
 
 no.addEventListener(
     "click", (e) => {
-        console.log("I am no!");
+        console.log("say yes :)");
 
         let plusCount = baseCount++;
 
         if(
-            baseCount > 6
+            baseCount > 5
         ){
             no.style.visibility = "hidden";
             console.log (plusCount);
@@ -56,6 +64,7 @@ no.addEventListener(
             yes.style.letterSpacing = "0.7rem"
             yes.style.color = "white";
             yes.style.fontWeight = "bold";
+            console.log("say yes >:(")
          
         }
 
@@ -66,6 +75,7 @@ no.addEventListener(
                 clickChangeClr();
             }, 500
             );
+           
         }
 
 

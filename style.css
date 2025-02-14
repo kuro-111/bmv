@@ -132,6 +132,7 @@ p {
     -moz-box-shadow: 5px 5px 0px 0px rgba(66, 68, 90, 1);
     box-shadow: 5px 5px 0px 0px rgba(66, 68, 90, 1);
     filter: drop-shadow(-2px -2px 0px #efecec);
+    position: fixed;
 }
 
 .window-upper {
@@ -260,4 +261,62 @@ p {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s
+}
+
+
+video {
+    visibility: hidden;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 1;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+video.show {
+    visibility: visible;
+}
+
+audio {
+    visibility: hidden;
+}
+
+img {
+    visibility: hidden;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    left: 1;
+    top: 1;
+    width: 50%;
+    height: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img.show {
+    visibility: visible;
+}
+
+.ily {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    margin-top: -40rem;
+    font-family:"Jersey 10 Charted", serif ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: rgb(137, 226, 226);
+    
+}
+.ily.show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  
 }
